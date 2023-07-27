@@ -1,0 +1,61 @@
+body {
+    /* model block */
+    padding: 100px;
+}
+.page {
+    /* model block */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 20px;
+}
+.svg {
+    /* model block */
+    width: 400px;
+    height: 300px;
+
+    /* style */
+    border: 1px solid #000;
+}
+.svg__polyline{
+    stroke-linejoin: round
+}
+.svg_magic-text {
+    /* model block */
+    overflow: visible;
+}
+.svg__text {
+    /* typographic */
+    font-size: 24px;
+    z-index: 1;
+    fill: red;
+}
+.svg__animation {
+    stroke: brown;
+    stroke-width: 5px;
+    stroke-dasharray: 800px;
+    stroke-dashoffset: 800px;
+}
+.svg__animation rect{
+    transition: all 1s ease-in-out;
+}
+.svg__animation:hover rect{
+    stroke-dashoffset: 0;
+}
+.svg__apple path{
+    fill: none;
+    stroke: red;
+    stroke-width: 0.2px;
+    stroke-dasharray: 60px;
+    stroke-dashoffset: 60px;
+    transition: all 3s ease-in-out;
+}
+.svg__apple:hover path{
+    stroke-dashoffset: 0;
+}
+img {
+    /* model block */
+    width: 400px;
+    height: 250px;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);;
+}
